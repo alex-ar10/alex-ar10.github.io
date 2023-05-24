@@ -27,6 +27,9 @@ header {
   width: 80vw;
   justify-content: center;
   align-self: center;
+  position: sticky;
+  top: -10px;
+  z-index: 1;
 }
 
 main {
@@ -39,6 +42,12 @@ section {
   display: flex;
   flex-flow: row nowrap;
   align-self: flex-start;
+}
+
+footer {
+  padding: 20px;
+  position: sticky;
+  bottom: 0;
 }
 
 nav {
@@ -111,7 +120,7 @@ nav {
 .nav-button {
   width: 100px;
   height: 30px;
-  border: none;
+  border: solid var(--dark2);
   border-radius: 10px;
   background-color: var(--light);
   transition-duration: 0.2s;
@@ -126,4 +135,10 @@ nav {
 .nav-button:active {
   opacity: 0.2;
   animation-duration: 0.2s;
+}
+
+.active-page {
+  background-color: var(--grey1);
+  color: var(--light);
+  border: solid var(--dark2);
 }
