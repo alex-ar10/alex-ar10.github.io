@@ -15,7 +15,7 @@ body {
   background-color: var(--light);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
 }
 
 header {
@@ -27,6 +27,9 @@ header {
   width: 80vw;
   justify-content: center;
   align-self: center;
+  position: sticky;
+  top: -10px;
+  z-index: 1;
 }
 
 main {
@@ -41,13 +44,19 @@ section {
   align-self: flex-start;
 }
 
+footer {
+  padding: 20px;
+  position: sticky;
+  bottom: 0;
+}
+
 nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
 }
 
-.--quiz-card {
+.quiz-card {
   border: solid 2px var(--dark2);
   border-radius: 10px;
   width: 80vw;
@@ -60,7 +69,7 @@ nav {
   align-items: center;
 }
 
-.--bookmark-button {
+.bookmark-button {
   align-self: flex-end;
   font-size: 15pt;
   background-color: transparent;
@@ -69,15 +78,15 @@ nav {
   cursor: pointer;
 }
 
-.--bookmark-button:hover {
+.bookmark-button:hover {
   transform: scale(1.5);
 }
 
-.--bookmark-button:active {
+.bookmark-button:active {
   transform: scale(1.8);
 }
 
-.--quiz-button {
+.quiz-button {
   width: 100px;
   height: 30px;
   border: solid;
@@ -88,12 +97,12 @@ nav {
   cursor: pointer;
 }
 
-.--quiz-button:hover {
+.quiz-button:hover {
   background: var(--grey1);
   color: var(--light);
 }
 
-.--quiz-button:active {
+.quiz-button:active {
   opacity: 0.2;
   animation-duration: 0.2s;
 }
@@ -108,22 +117,28 @@ nav {
   padding-right: 10px;
 }
 
-.--nav-button {
+.nav-button {
   width: 100px;
   height: 30px;
-  border: none;
+  border: solid var(--dark2);
   border-radius: 10px;
   background-color: var(--light);
   transition-duration: 0.2s;
   cursor: pointer;
 }
 
-.--nav-button:hover {
+.nav-button:hover {
   background: var(--grey1);
   color: var(--light);
 }
 
-.--nav-button:active {
+.nav-button:active {
   opacity: 0.2;
   animation-duration: 0.2s;
+}
+
+.active-page {
+  background-color: var(--grey1);
+  color: var(--light);
+  border: solid var(--dark2);
 }
