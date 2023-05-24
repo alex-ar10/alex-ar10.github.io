@@ -1,1 +1,15 @@
-/* This is a comment. */
+:root {
+  --dark3: #393646;
+  --dark2: #4f4557;
+  --dark1: #6d5d6e;
+  --light: #f4eee0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+}
