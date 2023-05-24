@@ -62,6 +62,40 @@ nav {
 
 .--bookmark-button {
   align-self: flex-end;
+  font-size: 15pt;
+  background-color: transparent;
+  border: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.--bookmark-button:hover {
+  transform: scale(1.5);
+}
+
+.--bookmark-button:active {
+  transform: scale(1.8);
+}
+
+.--quiz-button {
+  width: 100px;
+  height: 30px;
+  border: solid;
+  border-color: var(--dark2);
+  border-radius: 10px;
+  background-color: transparent;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.--quiz-button:hover {
+  background: var(--grey1);
+  color: var(--light);
+}
+
+.--quiz-button:active {
+  opacity: 0.2;
+  animation-duration: 0.2s;
 }
 
 .tag {
@@ -81,9 +115,15 @@ nav {
   border-radius: 10px;
   background-color: var(--light);
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 .--nav-button:hover {
   background: var(--grey1);
   color: var(--light);
+}
+
+.--nav-button:active {
+  opacity: 0.2;
+  animation-duration: 0.2s;
 }
