@@ -12,4 +12,65 @@
 body {
   background-color: var(--light);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header {
+  display: flex;
+  background-color: var(--dark2);
+  border: solid var(--dark) 2px;
+  color: var(--light);
+  border-radius: 10px;
+  width: 80vw;
+  justify-content: center;
+  align-self: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: flex-start;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.--quiz-card {
+  border: solid 2px var(--dark2);
+  border-radius: 10px;
+  width: 80vw;
+  height: 35vh;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.--bookmark-button {
+  align-self: flex-end;
+}
+
+.tag {
+  color: white;
+  background-color: grey;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.--nav-button {
 }
