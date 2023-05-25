@@ -12,37 +12,40 @@
       <h1>Alex's Quiz App</h1>
     </header>
     <main>
-      <article class="card quiz-card">
-        <button class="button bookmark-button">🧷</button>
-        <p class="question">What's my name?</p>
-        <button class="button quiz-button">Show Answer</button>
-        <section>
-          <p class="tag">CSS</p>
-          <p class="tag">HTML</p>
-          <p class="tag">JS</p>
-        </section>
+      <section class="full-profile">
+      <div class="profile-section">
+        <img
+          class="profile-picture"
+          src="./assets/alex.jpeg"
+          alt="Profile Picture of Alex"
+        />
+        <h3 class="name">Alexander Mustermann</h3>
+      </div>
+
+      <article class="about-me">
+        <h3>About me</h3>
+        <p>
+          This is a short about me text, where everything is about who I am and
+          who it is that is me. So if you wanna know who this me of myself is,
+          read me.
+        </p>
       </article>
-      <article class="card quiz-card">
-        <button class="button bookmark-button">🧷</button>
-        <p class="question">What's this website for?</p>
-        <button class="button quiz-button">Hide Answer</button>
-        <p class="answer">To quiz people</p>
-        <section>
-          <p class="tag">CSS</p>
-          <p class="tag">HTML</p>
-          <p class="tag">JS</p>
-        </section>
-      </article>
-      <article class="card quiz-card">
-        <button class="button bookmark-button">🧷</button>
-        <p class="question">Why does this website exist?</p>
-        <button class="button quiz-button">Show answer</button>
-        <section>
-          <p class="tag">CSS</p>
-          <p class="tag">HTML</p>
-          <p class="tag">JS</p>
-        </section>
-      </article>
+
+      <div class="profile-buttons">
+        <button class="profile-button">⁉️</button>
+        <button class="profile-button">🖇</button>
+      </div>
+
+      <div>
+        <h3>Settings</h3>
+        <div class="settings-section">
+          <span>Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
     </main>
     <footer>
       <nav>
@@ -65,6 +68,7 @@
           Profile
         </button>
       </nav>
+    </section>
     </footer>
   </body>
 </html>
