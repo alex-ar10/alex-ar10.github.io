@@ -71,18 +71,22 @@ nav {
 
 .bookmark-button {
   align-self: flex-end;
-  font-size: 15pt;
   background-color: transparent;
   border: none;
-  transition-duration: 0.2s;
   cursor: pointer;
 }
 
-.bookmark-button:hover {
+.bookmark-image {
+  width: 20px;
+  height: auto;
+  transition-duration: 0.2s;
+}
+
+.bookmark-image:hover {
   transform: scale(1.5);
 }
 
-.bookmark-button:active {
+.bookmark-image:active {
   transform: scale(1.8);
 }
 
