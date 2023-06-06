@@ -18,7 +18,7 @@ questionsForm.addEventListener("submit", (event) => {
   console.log(data);
 
   const newCard = document.createElement("article");
-  newCard.classList.add("form-card");
+  newCard.classList.add("new-card");
   main.append(newCard);
 
   const newQuestion = document.createElement("p");

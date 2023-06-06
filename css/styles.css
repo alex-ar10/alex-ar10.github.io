@@ -73,12 +73,24 @@ nav {
   border: solid 2px var(--dark2);
   border-radius: 10px;
   width: 80vw;
-  height: 45vh;
+  height: 80vh;
   margin: 10px;
   padding: 10px;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+}
+
+.new-card {
+  border: solid 2px var(--dark2);
+  border-radius: 10px;
+  width: 80vw;
+  height: 35vh;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
 }
 
 .new-question-form {
@@ -90,7 +102,9 @@ nav {
   align-items: flex-start;
 }
 
-.new-question-inputs {
+.new-question-input,
+.new-answer-input,
+.new-tags-input {
   width: 100%;
 }
 
@@ -156,10 +170,10 @@ nav {
 }
 
 .nav-button {
-  width: 100px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border: solid var(--dark2);
-  border-radius: 10px;
+  border-radius: 50%;
   background-color: var(--light);
   transition-duration: 0.2s;
   cursor: pointer;
@@ -173,6 +187,11 @@ nav {
 .nav-button:active {
   opacity: 0.2;
   animation-duration: 0.2s;
+}
+
+.nav-img {
+  width: 27px;
+  height: auto;
 }
 
 .active-page {
