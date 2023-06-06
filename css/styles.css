@@ -69,20 +69,49 @@ nav {
   align-items: center;
 }
 
+.form-card {
+  border: solid 2px var(--dark2);
+  border-radius: 10px;
+  width: 80vw;
+  height: 35vh;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.new-question-form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.new-question-inputs {
+  width: 100%;
+}
+
 .bookmark-button {
   align-self: flex-end;
-  font-size: 15pt;
   background-color: transparent;
   border: none;
-  transition-duration: 0.2s;
   cursor: pointer;
 }
 
-.bookmark-button:hover {
+.bookmark-image {
+  width: 20px;
+  height: auto;
+  transition-duration: 0.2s;
+}
+
+.bookmark-image:hover {
   transform: scale(1.5);
 }
 
-.bookmark-button:active {
+.bookmark-image:active {
   transform: scale(1.8);
 }
 
@@ -105,6 +134,10 @@ nav {
 .quiz-button:active {
   opacity: 0.2;
   animation-duration: 0.2s;
+}
+
+.hidden {
+  display: none;
 }
 
 .tag {

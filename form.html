@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a new Question</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>New Questions Form</h1>
+    </header>
+    <main data-js="main">
+      <article class="card form-card">
+        <form action="" class="new-question-form" data-js="questionsForm">
+          <label for="your-question">Your Question</label>
+          <input
+            type="textarea"
+            id="your-question"
+            class="new-question-inputs"
+            name="yourQuestion"
+          />
+          <label for="your-answer">Your Answer</label>
+          <input
+            type="textarea"
+            id="your-answer"
+            class="new-question-inputs"
+            name="yourAnswer"
+          />
+          <label for="your-tags">Your Tags</label>
+          <input
+            type="text"
+            id="your-tags"
+            class="new-question-inputs"
+            name="yourTags"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <nav>
+        <button
+          onclick="window.location.href='./index.html'"
+          class="button nav-button"
+        >
+          Home
+        </button>
+        <button
+          onclick="window.location.href='./bookmarks.html'"
+          class="button nav-button"
+        >
+          Bookmarks
+        </button>
+        <button
+          onclick="window.location.href='./form.html'"
+          class="button nav-button active-page"
+        >
+          New Question
+        </button>
+        <button
+          onclick="window.location.href='./profile.html'"
+          class="button nav-button"
+        >
+          Profile
+        </button>
+      </nav>
+    </footer>
+  </body>
+</html>

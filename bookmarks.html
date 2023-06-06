@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex's Quiz App | Bookmarks</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -13,9 +14,24 @@
     </header>
     <main class="all-cards-section">
       <article class="card quiz-card">
-        <button class="button bookmark-button">🖇</button>
+        <button class="bookmark-button" data-js="bookmark-button">
+          <img
+            src="./assets/bookmark-add.png"
+            alt="Add a bookmark"
+            class="bookmark-image"
+            data-js="bookmark-img1"
+          />
+          <img
+            src="./assets/bookmark-added.png"
+            alt="Add a bookmark"
+            data-js="bookmark-img2"
+            class="bookmark-image"
+            style="display: none"
+          />
+        </button>
         <p class="question">What's my name?</p>
         <button class="button quiz-button">Show Answer</button>
+        <p class="answer hidden" data-js="answer">To quiz people</p>
         <section>
           <p class="tag">CSS</p>
           <p class="tag">HTML</p>
@@ -23,10 +39,24 @@
         </section>
       </article>
       <article class="card quiz-card">
-        <button class="button bookmark-button">🖇</button>
+        <button class="bookmark-button" data-js="bookmark-button">
+          <img
+            src="./assets/bookmark-add.png"
+            alt="Add a bookmark"
+            class="bookmark-image"
+            data-js="bookmark-img1"
+          />
+          <img
+            src="./assets/bookmark-added.png"
+            alt="Add a bookmark"
+            data-js="bookmark-img2"
+            class="bookmark-image"
+            style="display: none"
+          />
+        </button>
         <p class="question">What's this website for?</p>
         <button class="button quiz-button">Hide Answer</button>
-        <p class="answer">To quiz people</p>
+        <p class="answer hidden" data-js="answer">To quiz people</p>
         <section>
           <p class="tag">CSS</p>
           <p class="tag">HTML</p>
@@ -34,9 +64,24 @@
         </section>
       </article>
       <article class="card quiz-card">
-        <button class="button bookmark-button">🖇</button>
+        <button class="bookmark-button" data-js="bookmark-button">
+          <img
+            src="./assets/bookmark-add.png"
+            alt="Add a bookmark"
+            class="bookmark-image"
+            data-js="bookmark-img1"
+          />
+          <img
+            src="./assets/bookmark-added.png"
+            alt="Add a bookmark"
+            data-js="bookmark-img2"
+            class="bookmark-image"
+            style="display: none"
+          />
+        </button>
         <p class="question">Why does this website exist?</p>
         <button class="button quiz-button">Show answer</button>
+        <p class="answer hidden" data-js="answer">To quiz people</p>
         <section>
           <p class="tag">CSS</p>
           <p class="tag">HTML</p>
@@ -57,6 +102,12 @@
           class="button nav-button active-page"
         >
           Bookmarks
+        </button>
+        <button
+          onclick="window.location.href='./form.html'"
+          class="button nav-button"
+        >
+          New Question
         </button>
         <button
           onclick="window.location.href='./profile.html'"
