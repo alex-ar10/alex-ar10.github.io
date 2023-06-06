@@ -16,26 +16,45 @@
       <article class="card form-card">
         <form action="" class="new-question-form" data-js="questionsForm">
           <label for="your-question">Your Question</label>
-          <input
+          <textarea
             type="textarea"
             id="your-question"
-            class="new-question-inputs"
+            class="new-question-input"
             name="yourQuestion"
-          />
+            maxlength="150"
+            data-js="yourQuestion"
+            cols="20"
+            rows="3"
+          ></textarea>
+          <p data-js="questionCharLeft" class="character-count">
+            150 characters left
+          </p>
           <label for="your-answer">Your Answer</label>
-          <input
+          <textarea
             type="textarea"
             id="your-answer"
-            class="new-question-inputs"
+            class="new-answer-input"
             name="yourAnswer"
-          />
+            maxlength="150"
+            data-js="yourAnswer"
+            cols="20"
+            rows="3"
+          ></textarea>
+          <p data-js="answerCharLeft" class="character-count">
+            150 characters left
+          </p>
           <label for="your-tags">Your Tags</label>
           <input
             type="text"
             id="your-tags"
-            class="new-question-inputs"
+            class="new-tags-input"
             name="yourTags"
+            maxlength="150"
+            data-js="yourTags"
           />
+          <p data-js="tagsCharLeft" class="character-count">
+            150 characters left
+          </p>
           <button type="submit">Submit</button>
         </form>
       </article>
@@ -46,25 +65,29 @@
           onclick="window.location.href='./index.html'"
           class="button nav-button"
         >
-          Home
+          <img src="./assets/home.png" alt="Home" class="nav-img" />
         </button>
         <button
           onclick="window.location.href='./bookmarks.html'"
           class="button nav-button"
         >
-          Bookmarks
+          <img src="/assets/bookmarks.png" alt="Bookmark" class="nav-img" />
         </button>
         <button
           onclick="window.location.href='./form.html'"
           class="button nav-button active-page"
         >
-          New Question
+          <img
+            src="./assets/form.png"
+            alt="New Question Form"
+            class="nav-img"
+          />
         </button>
         <button
           onclick="window.location.href='./profile.html'"
           class="button nav-button"
         >
-          Profile
+          <img src="./assets/profile.png" alt="Profile" class="nav-img" />
         </button>
       </nav>
     </footer>
