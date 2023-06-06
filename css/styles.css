@@ -94,6 +94,11 @@ nav {
   width: 100%;
 }
 
+.character-count {
+  align-self: flex-end;
+  font-size: 13px;
+}
+
 .bookmark-button {
   align-self: flex-end;
   background-color: transparent;
