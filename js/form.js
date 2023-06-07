@@ -65,19 +65,3 @@ yourAnswerInput.addEventListener("input", () => {
     return;
   }
 });
-
-yourTagsInput.addEventListener("input", () => {
-  let tagsLength = 150 - parseInt(yourTagsInput.value.length);
-  if (tagsLength > 1) {
-    console.log(tagsLength);
-    tagsCharLeft.textContent = `${tagsLength} characters left`;
-  } else if (tagsLength < 2 && tagsLength > 0) {
-    console.log(tagsLength);
-    tagsCharLeft.textContent = `${tagsLength} character left`;
-  } else if (tagsLength < 1) {
-    console.log(tagsLength);
-    tagsCharLeft.textContent = `${tagsLength} characters left`;
-  } else {
-    return;
-  }
-});
